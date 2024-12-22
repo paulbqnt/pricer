@@ -1,0 +1,24 @@
+meta {
+  name: Calculate Option Price
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/api/options/price
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "underlyingPrice": 100.0,
+    "strikePrice": 100.0,
+    "volatility": 0.2,
+    "riskFreeRate": 0.05,
+    "dividendYield": 0.01,
+    "optionType": "EUROPEAN",
+    "modelType": "BlackScholes",
+    "isCall": "true"
+  }
+}
