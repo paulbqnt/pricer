@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class PricerApplication
 
 fun main(args: Array<String>) {
-	runApplication<PricerApplication>(*args)
+    runApplication<PricerApplication>(*args)
 }

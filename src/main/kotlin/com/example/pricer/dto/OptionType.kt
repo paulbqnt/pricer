@@ -1,4 +1,5 @@
 package com.example.pricer.dto
 
-class OptionType {
+enum class OptionType {
+    EUROPEAN, AMERICAN, ASIAN, DIGITAL, PARISIAN, BERMUDAN, BARRIER, COMPOUND
 }

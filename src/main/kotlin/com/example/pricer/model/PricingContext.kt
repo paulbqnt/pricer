@@ -1,4 +1,9 @@
 package com.example.pricer.model
 
-class PricingContext {
-}
+data class PricingContext(
+    val spot: Double,
+    val strike: Double,
+    val volatility: Double,
+    val riskFreeRate: Double,
+    val maturity: Double
+)
