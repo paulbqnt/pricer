@@ -49,4 +49,10 @@ class PricerController(
             ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null)
         }
     }
+
+    @GetMapping("/hello")
+    fun hello(): String {
+        return "hello"
+    }
+
 }
